@@ -3,12 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
     <link href="./output.css" rel="stylesheet">
 </head>
-<body>
-    <h1 class="bg-black">
-        Hello world!
-    </h1>
+<body class="overflow-x-hidden">
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+        <img src="../images/Friday.jpg" alt="" class="w-full">
+    </div>
+
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+        <img class="w-48 cursor-pointer ml-2" src="../images/logo.png" alt="logo">
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">My Work</a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>
+        <div class="flex items-center gap-4">
+            <button><img src="../images/moon-icon.png" alt="moon-icon" class="w-7"></button>
+            <a href="#" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">Contact <img src="../images/up-right-arrow.png" alt="contact-arrow" class="w-4"></a> 
+            <button class="block md:hidden ml-3" onclick="openMenu()">
+                <img src="../images/menu.png" alt="menu-icon" class="w-7">
+            </button>   
+        </div>
+
+        <!-- -------------mobile menu---------------- -->
+         <ul id="side-menu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500">
+            <div class="absolute right-6 top-6" onclick="closeMenu()">
+                <img src="../images/close-menu.png" alt="close-menu" class="w-10 cursor-pointer">
+            </div>
+            <li><a href="#" onclick="closeMenu()">Home</a></li>
+            <li><a href="#" onclick="closeMenu()">About Me</a></li>
+            <li><a href="#" onclick="closeMenu()">Services</a></li>
+            <li><a href="#" onclick="closeMenu()">My Work</a></li>
+            <li><a href="#" onclick="closeMenu()">Contact Me</a></li>
+         </ul>
+
+    </nav>
+
+
+<script src="../script.js"></script>
 </body>
 </html>
+
