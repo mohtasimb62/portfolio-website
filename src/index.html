@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +8,17 @@
 </head>
 <body class="overflow-x-hidden">
     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
-        <img src="../images/Friday.jpg" alt="" class="w-full">
+        <img src="" alt="" class="w-full">       <!-- FIND A BETTER GRADIENT -->
     </div>
 
     <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
         <img class="w-48 cursor-pointer ml-2" src="../images/logo.png" alt="logo">
         <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">My Work</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#contact">Contact Me</a></li>
         </ul>
         <div class="flex items-center gap-4">
             <button><img src="../images/moon-icon.png" alt="moon-icon" class="w-7"></button>
@@ -33,11 +33,11 @@
             <div class="absolute right-6 top-6" onclick="closeMenu()">
                 <img src="../images/close-menu.png" alt="close-menu" class="w-10 cursor-pointer">
             </div>
-            <li><a href="#" onclick="closeMenu()">Home</a></li>
-            <li><a href="#" onclick="closeMenu()">About Me</a></li>
-            <li><a href="#" onclick="closeMenu()">Services</a></li>
-            <li><a href="#" onclick="closeMenu()">My Work</a></li>
-            <li><a href="#" onclick="closeMenu()">Contact Me</a></li>
+            <li><a href="#top" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About Me</a></li>
+            <li><a href="#services" onclick="closeMenu()">Services</a></li>
+            <li><a href="#work" onclick="closeMenu()">My Work</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact Me</a></li>
          </ul>
 
     </nav>
@@ -57,6 +57,117 @@
     </div>
 
     <!-- ------------------about me-------------------- -->
+
+    <div id="about" class="w-full px-[15%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg">Introduction</h4>
+        <h2 class="text-center text-5xl">About me</h2>
+
+        <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+            <div class="max-w-max mx-auto relative">
+                <img src="../images/pfp.jpeg" alt="user-image" class="w-64 sm:w-96 rounded-3xl max-w-none">
+                <div class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center">
+                    <img src="" alt="" class="w-full">
+                    <img src="" alt="" class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                </div>
+            </div>
+            <div class="flex-1">
+                <p class="mb-10 max-w-3xl">I am an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
+                <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl">
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="../images/code-icon.png" alt="languages-icon" class="w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
+                        <p class="text-gray-600 text-sm">HTML, CSS, JavaScript, ReactJS, NextJS</p>
+                    </li>
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="../images/education-icon.png" alt="education-icon" class="w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Education</h3>
+                        <p class="text-gray-600 text-sm">BS in Computer Science</p>
+                    </li>
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="../images/project-icon.png" alt="project-icon" class="w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Projects</h3>
+                        <p class="text-gray-600 text-sm">Built more than 5 projects</p>
+                    </li>
+                </ul>
+
+                <h4 class="my-6 text-gray-700">Tools I use</h4>
+
+                <ul class="flex items-center gap-3 sm:gap-5">
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"><img src="../images/vscode-icon.png" class="w-5 sm:w-7"></li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"><img src="../images/vscode-icon.png" class="w-5 sm:w-7"></li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"><img src="../images/vscode-icon.png" class="w-5 sm:w-7"></li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"><img src="../images/vscode-icon.png" class="w-5 sm:w-7"></li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"><img src="../images/vscode-icon.png" class="w-5 sm:w-7"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
+<h1>hi</h1>
 
 <script src="../script.js"></script>
 </body>
